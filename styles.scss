@@ -1,0 +1,197 @@
+
+@import url('https://fonts.cdnfonts.com/css/verdana');
+
+@import url("https://db.onlinewebfonts.com/c/7d1b300e1f0330436dce60fdeb9951da?family=Stolzl-Medium");
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1090px;
+    margin: 0 auto; 
+
+    h1 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    margin-left: 40px;
+    margin-top: 94px;
+    }
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    background: #F3F8FC;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Stolzl-Medium", sans-serif;
+}
+
+.cardTitle h4 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.headline {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    margin-top: 13px;
+    line-height: 18px;
+}
+
+.diagramText {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+
+.card {
+    background: #FFFFFF;
+    border-radius: 40px;
+    padding: 40px 40px 20px 20px;
+
+    .cardTitle {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    }
+  
+    .statistics {
+        display: flex;
+        gap: 20px;
+    }
+
+}
+
+.allCards {
+    display: flex;
+    gap: 20px;
+}
+
+.chart {
+    transform: rotate(-90deg);
+}
+
+.segment {
+
+    &.background {
+        stroke: #B6D4ED;
+        stroke-width: 16;
+        stroke: #d2d3d4;
+    }
+    &.green {
+        stroke: #00A75C;
+        stroke-width: 16;
+        stroke-dasharray: calc( 2 * 3.14 * 60 / 100 * 70) 1000; 
+        stroke-dashoffset: -0;
+    }
+
+
+    &.orange {
+        stroke: #E9841D;
+        stroke-width: 16;
+        stroke-dasharray: calc(2 * 3.14 * 60 / 100 * 10) 1000;
+        stroke-dashoffset: calc(-1 * 2 * 3.14 * 60 / 100 * 70);
+    }
+
+
+    &.red {
+        stroke: #EC133D;
+        stroke-width: 16;
+        stroke-dasharray: calc(2 * 3.14 * 60 / 100 * 10) 1000;
+        stroke-dashoffset: calc(-1 * 2 * 3.14 * 60 / 100 * 80);
+    }
+}
+
+.item {
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    width: 183px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 8px;
+    height: 20px;
+    line-height: 20px;
+
+    span {
+        flex-grow: 1;
+    }
+
+    &_percent {
+        display: flex;
+        gap: 4px;
+    }
+
+    &Count {
+        opacity: 50%;
+    }
+
+}
+
+
+.circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%; 
+
+    &_green {
+        background-color: #00A75C;
+    }
+
+    &_orange {
+        background-color: #E9841D;
+    }
+
+    &_red {
+        background-color: #EC133D;
+    }
+
+    &_blue {
+        background-color: #B6D4ED;
+    }
+}
+
+
+.progress {
+    margin-left: 25px;
+
+    text {
+        font-size: 32px;
+        font-weight: 400;
+    }
+
+    .progressInfo {
+        font-family: Verdana, sans-serif;
+        margin-top: 20px;
+        margin-left: 5px;
+        width: 190px;
+        font-size: 14px;
+        text-align: center;
+        line-height: 20px;
+    }
+}
+
+.threeItems {
+
+    margin-left: 20px;
+
+    .oneItem {
+        height: 26px;
+        border: 1px solid #E7F1F9;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        padding: 4px 12px;
+        gap: 6px;
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="./styles.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Моя команда</h1>
+        <div class="allCards">
+          <div class="card">
+            <div class="cardTitle">
+              <h4>Обученность команды</h4>
+              <img src="./images/information 1.svg"/>
+            </div>
+
+            <div class="statistics">
+              <div class="canvas">
+                <svg class="chart" width="180" height="180" viewBox="0 0 150 150">
+                  <circle
+                  cx="80"
+                  cy="80"
+                  r="60"
+                  stroke="#B6D4ED"
+                  stroke-width="16"
+                  fill="transparent"
+                  />
+                  
+                  <circle
+                    class="segment green"
+                    cx="80"
+                    cy="80"
+                    r="60"
+                    fill="transparent"
+                    stroke="#1ABC9C"
+                  />
+                  
+                  <circle
+                    class="segment orange"
+                    cx="80"
+                    cy="80"
+                    r="60"
+                    fill="transparent"
+                  ></circle>
+
+                  <circle
+                    class="segment red"
+                    cx="80"
+                    cy="80"
+                    r="60"
+                    fill="transparent"
+                  ></circle>
+                  
+                  <text class="diagramText"
+                    x="55%"
+                    y="55%"
+                    dominant-baseline="middle"
+                    text-anchor="middle"
+                    fill="#333"
+                    transform="rotate(90, 80, 80)"
+                  >
+                    70%
+                  </text>
+                </svg>
+              </div> 
+              <div>
+                <h5 class="headline">Курсы и траектории</h5>
+                <ul>
+                  <li class="item">
+                    <div class="circle circle_green"></div>
+                    <span>
+                      Завершено
+                    </span>
+                    <div class="item_percent">
+                      <p>70%</p>
+                      <p class="itemCount">(7)</p>
+                    </div>
+                  </li>
+
+                  <li class="item">
+                    <div class="circle circle_orange"></div>
+                    <span>
+                      В процессе
+                    </span>
+                    <div class="item_percent">
+                      <p>10%</p>
+                      <p class="itemCount">(1)</p>
+                    </div>
+                  </li>
+
+                  <li class="item">
+                    <div class="circle circle_red"></div>
+                    <span>
+                      Не пройдено
+                    </span>
+                    <div class="item_percent">
+                      <p>10%</p>
+                      <p class="itemCount">(1)</p>
+                    </div>
+                  </li>
+
+                  <li class="item">
+                    <div class="circle circle_blue"></div>
+                    <span>
+                      Не начато
+                    </span>
+                    <div class="item_percent">
+                      <p>10%</p>
+                      <p class="itemCount">(1)</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cardTitle">
+              <h4>Прогресс сотрудников</h4>
+              <img src="./images/information 1.svg"/>
+            </div>
+            <div class="progress">
+              <svg
+                class="progress-svg"
+                class="progress-svg"
+                width="200px"
+                height="100px"
+                viewBox="0 -50 100 100"
+              >
+                <circle
+                  cx="50"
+                  cy="50"
+                  r="90px"
+                  stroke="#e0e0e0"
+                  stroke-width="20"
+                  fill="transparent"
+                />
+                <circle
+                  cx="50"
+                  cy="50"
+                  r="90px"
+                  stroke="#ff9800"
+                  stroke-width="20"
+                  fill="transparent"
+                  stroke-dasharray="calc(2 * 3.14 * 60 / 100 * 70)"
+                  stroke-dashoffset="calc(-1 * 2 * 3.14 * 60 / 100 * 70)"
+                  transform="rotate(-90 50 50)"
+                />
+                <text
+                  x="50"
+                  y="40"
+                  text-anchor="middle"
+                  dominant-baseline="middle"
+                  class="progress-value"
+                >
+                  2/5
+                </text>
+              </svg>
+      <p class="progressInfo">сотрудников завершили обучение</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cardTitle">
+              <h4>Обратите внимание</h4>
+            </div>
+            <diV class="threeItems">
+              <div class="oneItem">
+                <img src="./images/Group 310.svg"/>
+                <p>Не прошли обучение: 1</p>
+              </div>
+              <div class="oneItem">
+                <img src="./images/Group 310.svg"/>
+                <p>Не заходили на портал: 1</p>
+              </div>
+              <div class="oneItem">
+                <img src="./images/Group 310.svg"/>
+                <p>Не были более 2 недель: 1</p>
+              </div>
+            </diV>
+          </div>
+    </div>
+</body>
+</html>
